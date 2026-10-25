@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tır Sıra Takip: uyurken sıranızı kaçırmayın</title>
+<meta name="title-tr" content="Tır Sıra Takip: uyurken sıranızı kaçırmayın">
+<meta name="title-en" content="Truck Watch: don't lose your place in line">
+<meta name="description" content="Gümrükte, limanda, fabrika kapısında sıra beklerken dinlenin. Öndeki tır ilerleyince Tır Sıra Takip sizi uyandırır.">
+<meta property="og:title" content="Tır Sıra Takip">
+<meta property="og:description" content="Öndeki tır ilerleyince sizi uyandırır.">
+<meta property="og:image" content="img/icon.png">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="bar">
+  <a class="brand" href="./"><img src="img/icon.png" alt=""><span lang="tr">Tır Sıra Takip</span><span lang="en">Truck Watch</span></a>
+  <div class="lang"><button data-l="tr">TR</button><button data-l="en">EN</button></div>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1><span lang="tr">Uyurken sıranızı kaçırmayın.</span><span lang="en">Sleep without losing your place in line.</span></h1>
+    <p class="lede" lang="tr">Gümrükte, limanda ya da fabrika kapısında saatlerce sıra mı bekliyorsunuz? Siz dinlenirken telefon öndeki tırı gözler, tır ilerlediği anda sizi en yüksek sesle uyandırır.</p>
+    <p class="lede" lang="en">Waiting for hours at the border, the port or a factory gate? While you rest, your phone keeps an eye on the truck ahead and wakes you at full volume the moment it moves.</p>
+    <!-- Swap each span for <a class="store" href="..."> once the app is live in that store. -->
+    <div class="stores">
+      <span class="store"><small lang="tr">Yakında</small><small lang="en">Coming soon</small><b>App Store</b></span>
+      <span class="store"><small lang="tr">Yakında</small><small lang="en">Coming soon</small><b>Google Play</b></span>
+    </div>
+    <p class="trial" lang="tr">7 gün ücretsiz, kart gerekmez.</p>
+    <p class="trial" lang="en">Free for 7 days, no card needed.</p>
+  </div>
+
+  <div class="scene" id="scene">
+    <svg viewBox="0 0 400 500" aria-hidden="true">
+      <path d="M40 500 L188 262 L212 262 L360 500 Z" fill="#1d2027"/>
+      <path d="M200 270 V290 M200 310 V340 M200 365 V410 M200 440 V500" stroke="#3a3f49" stroke-width="5"/>
+      <g class="trailer">
+        <rect x="100" y="190" width="200" height="193" rx="14" fill="#ffb300"/>
+        <rect x="197" y="206" width="6" height="161" fill="#241800"/>
+        <rect x="172" y="272" width="13" height="49" rx="4" fill="#241800"/>
+        <rect x="215" y="272" width="13" height="49" rx="4" fill="#241800"/>
+        <rect x="110" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
+        <rect x="259" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
+        <rect x="91" y="389" width="218" height="15" rx="5" fill="#ffb300"/>
+        <rect x="113" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
+        <rect x="244" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
+      </g>
+      <rect class="target" x="86" y="176" width="228" height="222" rx="10" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="14 10"/>
+    </svg>
+    <div class="chip"><i></i><span lang="tr">Takip ediliyor</span><span lang="en">Watching</span></div>
+    <button class="try" id="try"><span lang="tr">Dene: öndeki tır ilerlesin</span><span lang="en">Try it: let the truck move</span></button>
+    <div class="alarm" role="alert">
+      <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+      <strong><span lang="tr">Öndeki tır ilerledi!</span><span lang="en">The truck ahead moved!</span></strong>
+      <button id="stop"><span lang="tr">Alarmı kapat</span><span lang="en">Stop alarm</span></button>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2><span lang="tr">Nasıl çalışır</span><span lang="en">How it works</span></h2>
+  <ol class="steps">
+    <li>
+      <h3><span lang="tr">Telefonu ön cama takın</span><span lang="en">Mount the phone</span></h3>
+      <p lang="tr">Tutucuyla ön cama sabitleyin; arka kamera öndeki dorseyi görsün.</p>
+      <p lang="en">Fix it to the windscreen with a holder so the rear camera sees the trailer ahead.</p>
+    </li>
+    <li>
+      <h3><span lang="tr">Sarı kutuyu yerleştirin</span><span lang="en">Place the yellow box</span></h3>
+      <p lang="tr">"Hedefi seç"e basın, sarı kutuyu dorsenin arkasına oturtun.</p>
+      <p lang="en">Tap "Select target" and fit the yellow box to the back of the trailer.</p>
+    </li>
+    <li>
+      <h3><span lang="tr">Alarmı kurun, dinlenin</span><span lang="en">Set the alarm and rest</span></h3>
+      <p lang="tr">"Alarmı kur"a basın. Gerisini telefon izler.</p>
+      <p lang="en">Tap "Set alarm". The phone does the watching.</p>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2><span lang="tr">Ne zaman çalar</span><span lang="en">When it rings</span></h2>
+  <ul class="rings">
+    <li>
+      <h3><span lang="tr">Öndeki tır ilerleyince</span><span lang="en">The truck ahead moves off</span></h3>
+      <p lang="tr">En yüksek sesle, sessiz modda bile.</p>
+      <p lang="en">At full volume, even in silent mode.</p>
+    </li>
+    <li>
+      <h3><span lang="tr">Kamera dorseyi göremezse</span><span lang="en">The camera loses the trailer</span></h3>
+      <p lang="tr">Cam buğulandığında ya da telefon kaydığında haber verir.</p>
+      <p lang="en">When the windscreen fogs up or the phone shifts.</p>
+    </li>
+    <li>
+      <h3><span lang="tr">Telefon aşırı ısınırsa</span><span lang="en">The phone overheats</span></h3>
+      <p lang="tr">Güneşte kalan telefon kapanmadan önce sizi uyarır.</p>
+      <p lang="en">A phone baking in the sun warns you before it shuts down.</p>
+    </li>
+  </ul>
+  <p class="note" lang="tr">Alarmı kapatmak için düğmeye 1 saniye basılı tutun. iPhone ve iPad'de takip, uygulama ekranda açıkken çalışır: ekranı kilitlemeyin, uygulamadan çıkmayın.</p>
+  <p class="note" lang="en">Hold the button for 1 second to stop the alarm. On iPhone and iPad, monitoring runs while the app is on screen: don't lock the screen or leave the app.</p>
+</section>
+
+<section>
+  <h2><span lang="tr">Uygulamadan</span><span lang="en">Inside the app</span></h2>
+  <div class="shots" lang="tr">
+    <img src="img/tr_2.jpg" width="600" height="1304" loading="lazy" alt="Ana ekran: Her şey hazır, Hedefi seç düğmesi ve alarm öncesi kontroller">
+    <img src="img/tr_3.jpg" width="600" height="1304" loading="lazy" alt="Takip ekranı: Takip ediliyor, süre ve son kontrol">
+    <img src="img/tr_1.jpg" width="600" height="1304" loading="lazy" alt="Alarm ekranı: Öndeki tır ilerledi!">
+    <img src="img/tr_4.jpg" width="600" height="1304" loading="lazy" alt="Abonelik ekranı: 7 gün ücretsiz deneme ve planlar">
+  </div>
+  <div class="shots" lang="en">
+    <img src="img/en_2.jpg" width="600" height="1304" loading="lazy" alt="Home screen: all set, Select target button and pre-alarm checks">
+    <img src="img/en_3.jpg" width="600" height="1304" loading="lazy" alt="Monitoring screen: watching, duration and last check">
+    <img src="img/en_1.jpg" width="600" height="1304" loading="lazy" alt="Alarm screen: the truck ahead moved">
+    <img src="img/en_4.jpg" width="600" height="1304" loading="lazy" alt="Subscription screen: 7-day free trial and plans">
+  </div>
+</section>
+
+<section class="split">
+  <div>
+    <h2><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></h2>
+    <p lang="tr">Görüntüler yalnızca telefonunuzda işlenir. Hiçbir görüntü kaydedilmez, dışarı gönderilmez. Hesap yok, reklam yok.</p>
+    <p lang="en">Images are processed on your phone only. Nothing is saved or sent anywhere. No account, no ads.</p>
+    <p><a href="privacy.html"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span></a></p>
+  </div>
+  <div>
+    <h2><span lang="tr">Fiyat</span><span lang="en">Pricing</span></h2>
+    <p lang="tr">İlk takiple başlayan 7 gün ücretsiz. Kart gerekmez, süre bitince ücret alınmaz.</p>
+    <p lang="en">7 days free, starting with your first monitoring. No card needed, nothing is charged when it ends.</p>
+    <ul class="prices" lang="tr">
+      <li><span>Aylık</span><b>150 ₺</b></li>
+      <li><span>6 aylık</span><b>799 ₺</b></li>
+      <li><span>Yıllık</span><b>1.449 ₺</b></li>
+    </ul>
+    <p lang="en">Then a monthly, 6-month or yearly plan. Prices for your country are shown in the app and the store.</p>
+  </div>
+</section>
+
+<section id="destek">
+  <h2><span lang="tr">Destek</span><span lang="en">Support</span></h2>
+  <details>
+    <summary><span lang="tr">Alarm neden çalmadı?</span><span lang="en">Why didn't the alarm ring?</span></summary>
+    <p lang="tr">Telefonun şarjda, sesinin açık ve sarı kutunun dorsenin üzerinde olduğundan emin olun. Uygulamadaki "Alarm öncesi kontrol" listesi eksikleri gösterir. iPhone'da uygulama ekranda açık kalmalıdır.</p>
+    <p lang="en">Make sure the phone is charging, the volume is up and the yellow box sits on the trailer. The "Before you start" list in the app shows what is missing. On iPhone the app must stay on screen.</p>
+  </details>
+  <details>
+    <summary><span lang="tr">Gece ya da sisli havada çalışır mı?</span><span lang="en">Does it work at night or in fog?</span></summary>
+    <p lang="tr">Karanlık, sis ya da kirli cam görüntüyü zayıflatabilir. Kamera dorseyi göremez hâle gelirse alarm çalar ve sizi uyarır.</p>
+    <p lang="en">Darkness, fog or a dirty windscreen can weaken the image. If the camera loses sight of the trailer, the alarm rings to warn you.</p>
+  </details>
+  <details>
+    <summary><span lang="tr">Aboneliğimi nasıl iptal ederim?</span><span lang="en">How do I cancel my subscription?</span></summary>
+    <p lang="tr">iPhone'da Ayarlar → adınız → Abonelikler; Android'de Google Play → Profil → Ödemeler ve abonelikler. İptal, dönemin sonunda geçerli olur.</p>
+    <p lang="en">On iPhone: Settings → your name → Subscriptions. On Android: Google Play → Profile → Payments &amp; subscriptions. Cancellation takes effect at the end of the period.</p>
+  </details>
+  <p class="note"><span lang="tr">Başka bir sorunuz mu var? Yazın:</span><span lang="en">Anything else? Write to us:</span> <a href="mailto:info@batuhanyetgin.dev">info@batuhanyetgin.dev</a></p>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Batuhan Yetgin</span>
+  <a href="privacy.html"><span lang="tr">Gizlilik Politikası</span><span lang="en">Privacy Policy</span></a>
+  <a href="terms.html"><span lang="tr">Kullanım Şartları</span><span lang="en">Terms of Use</span></a>
+  <a href="#destek"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+</footer>
+</div>
+
+<script>
+(function () {
+  var scene = document.getElementById('scene');
+  var tryBtn = document.getElementById('try');
+  var stop = document.getElementById('stop');
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  tryBtn.addEventListener('click', function () {
+    scene.classList.add('gone');
+    tryBtn.hidden = true;
+    setTimeout(function () { scene.classList.add('ring'); stop.focus(); }, still ? 0 : 1900);
+  });
+  stop.addEventListener('click', function () {
+    scene.classList.remove('gone', 'ring');
+    tryBtn.hidden = false;
+    tryBtn.focus();
+  });
+})();
+</script>
+</body>
+</html>
