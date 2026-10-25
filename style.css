@@ -207,3 +207,9 @@ footer a:hover { color: var(--text); }
   .trailer, .target, .alarm { transition: none; }
   .ring .alarm { animation: none; }
 }
+
+/* always-visible credit bar */
+body { padding-bottom: 40px; }
+.credit { position: fixed; z-index: 10; left: 0; right: 0; bottom: 0; padding: 9px 16px calc(9px + env(safe-area-inset-bottom));
+  text-align: center; font-size: 14px; color: var(--soft); background: rgba(12,15,20,.82);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid rgba(255,255,255,.06); }
