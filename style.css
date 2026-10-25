@@ -36,9 +36,9 @@ html[data-lang="en"] [lang="tr"]:not(html) { display: none !important; }
   font: 700 24px/1 var(--display); letter-spacing: .01em; }
 .brand img { width: 36px; height: 36px; border-radius: 9px; }
 .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
-.lang button { border: 0; background: none; color: var(--muted); font: 600 14px/1 var(--body);
+.lang button, .lang a { border: 0; text-decoration: none; background: none; color: var(--muted); font: 600 14px/1 var(--body);
   padding: 7px 12px; border-radius: 999px; cursor: pointer; }
-.lang button[aria-pressed="true"] { background: var(--amber); color: var(--night); }
+.lang button[aria-pressed="true"], .lang a[aria-current] { background: var(--amber); color: var(--night); }
 
 /* hero */
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding: 40px 0 72px; }
@@ -82,10 +82,11 @@ h3 { font: 600 24px/1.2 var(--display); margin: 0 0 6px; }
 .steps { list-style: none; counter-reset: s; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .steps li { counter-increment: s; }
 .steps li::before { content: counter(s); display: block; font: 700 64px/1 var(--display); color: var(--amber); margin-bottom: 8px; }
-.steps p, .rings p { margin: 0; color: #c9cdd5; }
+.steps p, .rings p, .places p { margin: 0; color: #c9cdd5; }
 
-.rings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; }
+.rings, .places { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 0; padding: 0; list-style: none; }
 .rings li { border-left: 4px solid var(--tail); padding-left: 16px; }
+.places li { border-left: 4px solid var(--amber); padding-left: 16px; }
 .note { margin: 28px 0 0; color: var(--muted); max-width: 44em; }
 
 .shots { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
@@ -117,7 +118,7 @@ footer a { color: var(--muted); }
   .hero, .split { grid-template-columns: 1fr; gap: 36px; }
   .hero { padding-top: 16px; }
   .scene { max-width: 420px; width: 100%; margin: 0 auto; }
-  .steps, .rings { grid-template-columns: 1fr; gap: 24px; }
+  .steps, .rings, .places { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
