@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
 <title>Truck Watch: truck queue alarm that wakes you when the line moves</title>
 <meta name="description" content="Waiting in a truck queue at the border, the port or a factory gate? Rest while your phone watches the truck ahead and wakes you at full volume the moment it moves. 7 days free.">
 <link rel="canonical" href="https://tirsiratakip.com/en/">
@@ -25,7 +27,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 [{
@@ -62,169 +64,244 @@
 </script>
 </head>
 <body>
-<div class="wrap">
-
-<header class="bar">
-  <a class="brand" href="/en/"><img src="/img/icon.png" alt="" width="36" height="36">Truck Watch</a>
-  <nav class="lang" aria-label="Language"><a href="/" hreflang="tr" lang="tr">TR</a><a href="/en/" aria-current="page">EN</a></nav>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/en/"><img src="/img/icon.png" alt="" width="34" height="34">Truck Watch</a>
+    <div class="links">
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#support">Questions</a>
+      <nav class="lang" aria-label="Language"><a href="/" hreflang="tr" lang="tr">TR</a><a href="/en/" aria-current="page">EN</a></nav>
+    </div>
+  </div>
 </header>
 
 <main>
 <div class="hero">
-  <div>
-    <h1>Sleep in the truck queue without losing your place.</h1>
-    <p class="lede">Waiting for hours at the border, the port or a factory gate? While you rest, your phone keeps an eye on the truck ahead and wakes you at full volume the moment it moves.</p>
-    <!-- Swap each span for <a class="store" href="..."> once the app is live in that store. -->
-    <div class="stores">
-      <span class="store"><small>Coming soon</small><b>App Store</b></span>
-      <span class="store"><small>Coming soon</small><b>Google Play</b></span>
+  <div class="wrap">
+    <div>
+      <h1>Sleep in the truck queue without losing your place.</h1>
+      <p class="lede">Waiting for hours at the border, the port or a factory gate? While you rest, your phone keeps an eye on the truck ahead and wakes you at full volume the moment it moves.</p>
+      <!-- Swap each span for <a class="badge" href="..."> once the app is live in that store. -->
+      <div class="stores">
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Coming soon</small><b>App Store</b></span></span>
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span><small>Coming soon</small><b>Google Play</b></span></span>
+      </div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Works offline</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Rings even in silent mode</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Free for 7 days, no card needed</li>
+      </ul>
     </div>
-    <p class="trial">Free for 7 days, no card needed.</p>
-  </div>
 
-  <div class="scene" id="scene">
-    <svg viewBox="0 0 400 500" aria-hidden="true">
-      <path d="M40 500 L188 262 L212 262 L360 500 Z" fill="#1d2027"/>
-      <path d="M200 270 V290 M200 310 V340 M200 365 V410 M200 440 V500" stroke="#3a3f49" stroke-width="5"/>
-      <g class="trailer">
-        <rect x="100" y="190" width="200" height="193" rx="14" fill="#ffb300"/>
-        <rect x="197" y="206" width="6" height="161" fill="#241800"/>
-        <rect x="172" y="272" width="13" height="49" rx="4" fill="#241800"/>
-        <rect x="215" y="272" width="13" height="49" rx="4" fill="#241800"/>
-        <rect x="110" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
-        <rect x="259" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
-        <rect x="91" y="389" width="218" height="15" rx="5" fill="#ffb300"/>
-        <rect x="113" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
-        <rect x="244" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
-      </g>
-      <rect class="target" x="86" y="176" width="228" height="222" rx="10" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="14 10"/>
-    </svg>
-    <div class="chip"><i></i>Watching</div>
-    <button class="try" id="try">Try it: let the truck move</button>
-    <div class="alarm" role="alert">
-      <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
-      <strong>The truck ahead moved!</strong>
-      <button id="stop">Stop alarm</button>
+    <div class="demo" id="scene">
+      <div class="phone">
+        <div class="screen">
+      <svg class="cam" viewBox="0 0 400 869" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b14"/><stop offset=".54" stop-color="#1b2335"/></linearGradient>
+          <radialGradient id="lamp"><stop offset="0" stop-color="#ffb300" stop-opacity=".45"/><stop offset="1" stop-color="#ffb300" stop-opacity="0"/></radialGradient>
+          <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6e9ee"/><stop offset="1" stop-color="#9aa1ab"/></linearGradient>
+          <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+        </defs>
+        <rect width="400" height="869" fill="url(#sky)"/>
+        <circle cx="336" cy="170" r="170" fill="url(#lamp)"/>
+        <path d="M336 166 V470" stroke="#202633" stroke-width="5"/>
+        <circle cx="336" cy="164" r="7" fill="#ffd36b"/>
+        <rect y="470" width="400" height="399" fill="#12151b"/>
+        <path d="M24 869 L190 470 H210 L376 869 Z" fill="#1b1f27"/>
+        <path d="M200 482 V500 M200 530 V568 M200 612 V676 M200 742 V869" stroke="#4c5360" stroke-width="5"/>
+        <g class="trailer">
+          <ellipse cx="200" cy="642" rx="140" ry="12" fill="#000" opacity=".55"/>
+          <rect x="92" y="300" width="216" height="290" rx="6" fill="url(#box)"/>
+          <rect x="198" y="308" width="4" height="274" fill="#6f7680"/>
+          <path d="M146 316 V576 M168 316 V576 M232 316 V576 M254 316 V576" stroke="#7f8690" stroke-width="5"/>
+          <rect x="174" y="430" width="16" height="7" rx="2" fill="#5b616b"/>
+          <rect x="210" y="430" width="16" height="7" rx="2" fill="#5b616b"/>
+          <rect x="84" y="590" width="232" height="15" rx="3" fill="#1d2129"/>
+          <g filter="url(#blur)" fill="#ff3b2b" opacity=".75"><rect x="92" y="552" width="36" height="22"/><rect x="272" y="552" width="36" height="22"/></g>
+          <rect x="96" y="556" width="28" height="14" rx="3" fill="#ff5a48"/>
+          <rect x="276" y="556" width="28" height="14" rx="3" fill="#ff5a48"/>
+          <rect x="174" y="572" width="52" height="14" rx="2" fill="#f1f2f4"/>
+          <rect x="174" y="572" width="7" height="14" fill="#1f4fd8"/>
+          <rect x="108" y="605" width="54" height="34" rx="6" fill="#0b0d11"/>
+          <rect x="238" y="605" width="54" height="34" rx="6" fill="#0b0d11"/>
+        </g>
+        <rect class="target" x="78" y="286" width="244" height="334" rx="14" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="16 10"/>
+      </svg>
+          <div class="chip"><i></i>Watching</div>
+          <div class="alarm" role="alert">
+            <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+            <strong>The truck ahead moved!</strong>
+            <button id="stop">Stop alarm</button>
+          </div>
+        </div>
+      </div>
+      <button class="try" id="try">Try it: let the truck move</button>
     </div>
   </div>
 </div>
 
-<section>
-  <h2>How it works</h2>
-  <ol class="steps">
-    <li>
-      <h3>Mount the phone</h3>
-      <p>Fix it to the windscreen with a holder so the rear camera sees the trailer ahead.</p>
-    </li>
-    <li>
-      <h3>Place the yellow box</h3>
-      <p>Tap "Select target" and fit the yellow box to the back of the trailer.</p>
-    </li>
-    <li>
-      <h3>Set the alarm and rest</h3>
-      <p>Tap "Set alarm". The phone does the watching.</p>
-    </li>
-  </ol>
-</section>
-
-<section>
-  <h2>When it rings</h2>
-  <ul class="rings">
-    <li>
-      <h3>The truck ahead moves off</h3>
-      <p>At full volume, even in silent mode.</p>
-    </li>
-    <li>
-      <h3>The camera loses the trailer</h3>
-      <p>When the windscreen fogs up or the phone shifts.</p>
-    </li>
-    <li>
-      <h3>The phone overheats</h3>
-      <p>A phone baking in the sun warns you before it shuts down.</p>
-    </li>
-  </ul>
-  <p class="note">Hold the button for 1 second to stop the alarm. On iPhone and iPad, monitoring runs while the app is on screen: don't lock the screen or leave the app.</p>
-</section>
-
-<section>
-  <h2>Where it helps</h2>
-  <ul class="places">
-    <li>
-      <h3>Border crossings and customs</h3>
-      <p>In truck queues that last hours, sometimes days, at border gates such as Kapıkule, Sarp or Habur.</p>
-    </li>
-    <li>
-      <h3>Ports, Ro-Ro and ferries</h3>
-      <p>While you wait to board a ship or ferry and the line creeps forward.</p>
-    </li>
-    <li>
-      <h3>Factories, warehouses and weigh stations</h3>
-      <p>While you wait at the gate to load, unload or weigh.</p>
-    </li>
-  </ul>
-  <p class="note">Made for truck drivers. It works like the "lead vehicle departure alert" in new cars, only on your phone.</p>
-</section>
-
-<section>
-  <h2>Inside the app</h2>
-  <div class="shots">
-    <img src="/img/en_2.jpg" width="600" height="1304" loading="lazy" alt="Truck Watch home screen: all set, Select target button and pre-alarm checks">
-    <img src="/img/en_3.jpg" width="600" height="1304" loading="lazy" alt="Monitoring screen: watching the truck ahead, duration and last check">
-    <img src="/img/en_1.jpg" width="600" height="1304" loading="lazy" alt="Alarm screen: the truck ahead moved">
-    <img src="/img/en_4.jpg" width="600" height="1304" loading="lazy" alt="Subscription screen: 7-day free trial and plans">
+<section id="how" class="alt">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="intro">Setup takes a minute. The phone on the windscreen watches the trailer ahead while you sleep in the back.</p>
+    <ol class="steps">
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/en_2.webp" width="860" height="1869" loading="lazy" alt="Home screen: all set, Select target button and pre-alarm checks"></div></div>
+        <h3>Mount the phone</h3>
+        <p>Fix it to the windscreen, tap "Select target" and fit the yellow box to the back of the trailer.</p>
+      </li>
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/en_3.webp" width="860" height="1869" loading="lazy" alt="Monitoring screen: watching the truck ahead, duration and last check"></div></div>
+        <h3>Set the alarm and rest</h3>
+        <p>The screen dims and the phone keeps watching the vehicle ahead. Leave the rest to it.</p>
+      </li>
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/en_1.webp" width="860" height="1869" loading="lazy" alt="Alarm screen: the truck ahead moved"></div></div>
+        <h3>Wake up when it moves</h3>
+        <p>The alarm sounds at full volume the moment the vehicle ahead pulls away. Hold for 1 second to stop it.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
-<section class="split">
-  <div>
+<section>
+  <div class="wrap">
+    <h2>When it rings</h2>
+    <p class="intro">Not only when the queue moves, but whenever monitoring is at risk.</p>
+    <ul class="cards">
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="18" cy="17.5" r="1.8"/></svg></div>
+        <h3>The truck ahead moves off</h3>
+        <p>At full volume, even in silent mode.</p>
+      </li>
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c5 0 9 4.5 10 7a13 13 0 0 1-2.4 3.4M6.3 6.3C4.1 7.7 2.6 9.9 2 12c1 2.5 5 7 10 7a9.7 9.7 0 0 0 5.7-1.8M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></div>
+        <h3>The camera loses the trailer</h3>
+        <p>When the windscreen fogs up or the phone shifts.</p>
+      </li>
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0Z"/></svg></div>
+        <h3>The phone overheats</h3>
+        <p>A phone baking in the sun warns you before it shuts down.</p>
+      </li>
+    </ul>
+    <p class="note">On iPhone and iPad, monitoring runs while the app is on screen: don't lock the screen or leave the app.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Where it helps</h2>
+    <p class="intro">Made for truck drivers. It works like the "lead vehicle departure alert" in new cars, only on your phone.</p>
+    <ul class="places">
+      <li>
+        <h3>Border crossings and customs</h3>
+        <p>In truck queues that last hours, sometimes days.</p>
+        <ul class="gates" aria-label="Example border gates">
+          <li>Kapıkule</li><li>Hamzabeyli</li><li>İpsala</li><li>Sarp</li><li>Habur</li><li>Cilvegözü</li><li>Gürbulak</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Ports, Ro-Ro and ferries</h3>
+        <p>While you wait to board a ship or ferry and the line creeps forward.</p>
+      </li>
+      <li>
+        <h3>Factories, warehouses and weigh stations</h3>
+        <p>While you wait at the gate to load, unload or weigh.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap price">
+    <div class="phone"><div class="screen"><img src="/img/en_4.webp" width="860" height="1869" loading="lazy" alt="Subscription screen: 7-day free trial and plans"></div></div>
+    <div>
+      <h2>Pricing</h2>
+      <p class="intro">7 days free, starting with your first monitoring. No card needed, nothing is charged when it ends.</p>
+      <ul class="plans">
+        <li><span>Monthly<small>Renews every month</small></span></li>
+        <li><span>6 months<small>Lower monthly cost</small></span></li>
+        <li class="best"><span><em class="tag">Best value</em>Yearly<small>Lowest monthly cost</small></span></li>
+      </ul>
+      <p class="note">Prices for your country are shown in the app and the store. Manage or cancel any time in the App Store or Google Play.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
     <h2>Privacy</h2>
-    <p>Images are processed on your phone only. Nothing is saved or sent anywhere. No account, no ads.</p>
-    <p><a href="/privacy.html?lang=en">Privacy Policy</a></p>
-  </div>
-  <div>
-    <h2>Pricing</h2>
-    <p>7 days free, starting with your first monitoring. No card needed, nothing is charged when it ends.</p>
-    <p>Then a monthly, 6-month or yearly plan. Prices for your country are shown in the app and the store.</p>
+    <p class="intro">The camera image never leaves your phone.</p>
+    <ul class="privacy">
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Processed on the phone</h3><p>Images are never saved or sent anywhere.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M17 8l4 4M21 8l-4 4"/></svg></div><h3>No account</h3><p>Use it without signing up or giving an email.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div><h3>No ads</h3><p>No ads popping up while you sleep.</p></li>
+    </ul>
+    <p class="note"><a href="/privacy.html?lang=en">Privacy Policy</a></p>
   </div>
 </section>
 
 <section id="support">
-  <h2>Questions</h2>
-  <details>
-    <summary>How do I not lose my place in a truck queue while I sleep?</summary>
-    <p>Mount your phone on the windscreen so the rear camera sees the truck ahead. Truck Watch watches the vehicle ahead and sounds a loud alarm the moment it moves, so you can rest without losing your place.</p>
-  </details>
-  <details>
-    <summary>Does it need internet? Does it work abroad?</summary>
-    <p>Monitoring works offline; images are processed on the phone. You don't need roaming at the border or abroad. Connecting once a week is enough to verify your subscription.</p>
-  </details>
-  <details>
-    <summary>Which phones does it run on?</summary>
-    <p>iPhone and iPad with iOS 15 or later, and Android 10 or later. On iPhone and iPad, monitoring runs while the app is on screen.</p>
-  </details>
-  <details>
-    <summary>Why didn't the alarm ring?</summary>
-    <p>Make sure the phone is charging, the volume is up and the yellow box sits on the trailer. The "Before you start" list in the app shows what is missing.</p>
-  </details>
-  <details>
-    <summary>Does it work at night or in fog?</summary>
-    <p>Darkness, fog or a dirty windscreen can weaken the image. If the camera loses sight of the trailer, the alarm rings to warn you.</p>
-  </details>
-  <details>
-    <summary>How do I cancel my subscription?</summary>
-    <p>On iPhone: Settings → your name → Subscriptions. On Android: Google Play → Profile → Payments &amp; subscriptions. Cancellation takes effect at the end of the period.</p>
-  </details>
-  <p class="note">Anything else? Write to us: <a href="mailto:info@batuhanyetgin.dev">info@batuhanyetgin.dev</a></p>
+  <div class="wrap faq">
+    <div>
+      <h2>Questions</h2>
+      <p class="note">Anything else? Write to us: <a href="mailto:info@batuhanyetgin.dev">info@batuhanyetgin.dev</a></p>
+    </div>
+    <div>
+      <details>
+        <summary>How do I not lose my place in a truck queue while I sleep?</summary>
+        <p>Mount your phone on the windscreen so the rear camera sees the truck ahead. Truck Watch watches the vehicle ahead and sounds a loud alarm the moment it moves, so you can rest without losing your place.</p>
+      </details>
+      <details>
+        <summary>Does it need internet? Does it work abroad?</summary>
+        <p>Monitoring works offline; images are processed on the phone. You don't need roaming at the border or abroad. Connecting once a week is enough to verify your subscription.</p>
+      </details>
+      <details>
+        <summary>Which phones does it run on?</summary>
+        <p>iPhone and iPad with iOS 15 or later, and Android 10 or later. On iPhone and iPad, monitoring runs while the app is on screen.</p>
+      </details>
+      <details>
+        <summary>Why didn't the alarm ring?</summary>
+        <p>Make sure the phone is charging, the volume is up and the yellow box sits on the trailer. The "Before you start" list in the app shows what is missing.</p>
+      </details>
+      <details>
+        <summary>Does it work at night or in fog?</summary>
+        <p>Darkness, fog or a dirty windscreen can weaken the image. If the camera loses sight of the trailer, the alarm rings to warn you.</p>
+      </details>
+      <details>
+        <summary>How do I cancel my subscription?</summary>
+        <p>On iPhone: Settings → your name → Subscriptions. On Android: Google Play → Profile → Payments &amp; subscriptions. Cancellation takes effect at the end of the period.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Sleep easy in the next queue.</h2>
+      <p>Truck Watch is coming soon to the App Store and Google Play. The first 7 days are free.</p>
+      <!-- Swap each span for <a class="badge" href="..."> once the app is live in that store. -->
+      <div class="stores">
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Coming soon</small><b>App Store</b></span></span>
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span><small>Coming soon</small><b>Google Play</b></span></span>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
 <footer>
-  <span>© 2026 Batuhan Yetgin</span>
-  <a href="/privacy.html?lang=en">Privacy Policy</a>
-  <a href="/terms.html?lang=en">Terms of Use</a>
-  <a href="#support">Support</a>
+  <div class="wrap">
+    <span>© 2026 Batuhan Yetgin</span>
+    <a href="/privacy.html?lang=en">Privacy Policy</a>
+    <a href="/terms.html?lang=en">Terms of Use</a>
+    <a href="#support">Support</a>
+  </div>
 </footer>
-</div>
 
 <script src="/demo.js"></script>
 </body>

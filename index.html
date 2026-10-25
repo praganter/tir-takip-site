@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
 <title>Tır Sıra Takip: tır sırasında öndeki araç ilerleyince alarm</title>
 <meta name="description" content="Gümrükte, sınır kapısında, limanda ve fabrika sırasında uyurken sıranızı kaçırmayın. Öndeki tır ya da kamyon ilerleyince telefonunuz sizi yüksek sesle uyandırır. 7 gün ücretsiz.">
 <link rel="canonical" href="https://tirsiratakip.com/">
@@ -25,7 +27,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 [{
@@ -69,173 +71,244 @@
 </script>
 </head>
 <body>
-<div class="wrap">
-
-<header class="bar">
-  <a class="brand" href="/"><img src="/img/icon.png" alt="" width="36" height="36">Tır Sıra Takip</a>
-  <nav class="lang" aria-label="Dil"><a href="/" aria-current="page">TR</a><a href="/en/" hreflang="en" lang="en">EN</a></nav>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/img/icon.png" alt="" width="34" height="34">Tır Sıra Takip</a>
+    <div class="links">
+      <a href="#nasil">Nasıl çalışır</a>
+      <a href="#fiyat">Fiyat</a>
+      <a href="#destek">Sık sorulanlar</a>
+      <nav class="lang" aria-label="Dil"><a href="/" aria-current="page">TR</a><a href="/en/" hreflang="en" lang="en">EN</a></nav>
+    </div>
+  </div>
 </header>
 
 <main>
 <div class="hero">
-  <div>
-    <h1>Tır sırasında uyurken sıranızı kaçırmayın.</h1>
-    <p class="lede">Gümrükte, sınır kapısında, limanda ya da fabrika kapısında saatlerce sıra mı bekliyorsunuz? Siz dinlenirken telefon öndeki tırı gözler, araç ilerlediği anda sizi en yüksek sesle uyandırır.</p>
-    <!-- Swap each span for <a class="store" href="..."> once the app is live in that store. -->
-    <div class="stores">
-      <span class="store"><small>Yakında</small><b>App Store</b></span>
-      <span class="store"><small>Yakında</small><b>Google Play</b></span>
+  <div class="wrap">
+    <div>
+      <h1>Tır sırasında uyurken sıranızı kaçırmayın.</h1>
+      <p class="lede">Gümrükte, sınır kapısında, limanda ya da fabrika kapısında saatlerce sıra mı bekliyorsunuz? Siz dinlenirken telefon öndeki tırı gözler, araç ilerlediği anda sizi en yüksek sesle uyandırır.</p>
+      <!-- Swap each span for <a class="badge" href="..."> once the app is live in that store. -->
+      <div class="stores">
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Yakında</small><b>App Store</b></span></span>
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span><small>Yakında</small><b>Google Play</b></span></span>
+      </div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>İnternetsiz çalışır</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Sessiz modda bile çalar</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>7 gün ücretsiz, kart gerekmez</li>
+      </ul>
     </div>
-    <p class="trial">7 gün ücretsiz, kart gerekmez.</p>
-  </div>
 
-  <div class="scene" id="scene">
-    <svg viewBox="0 0 400 500" aria-hidden="true">
-      <path d="M40 500 L188 262 L212 262 L360 500 Z" fill="#1d2027"/>
-      <path d="M200 270 V290 M200 310 V340 M200 365 V410 M200 440 V500" stroke="#3a3f49" stroke-width="5"/>
-      <g class="trailer">
-        <rect x="100" y="190" width="200" height="193" rx="14" fill="#ffb300"/>
-        <rect x="197" y="206" width="6" height="161" fill="#241800"/>
-        <rect x="172" y="272" width="13" height="49" rx="4" fill="#241800"/>
-        <rect x="215" y="272" width="13" height="49" rx="4" fill="#241800"/>
-        <rect x="110" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
-        <rect x="259" y="349" width="31" height="19" rx="5" fill="#ff4b3a"/>
-        <rect x="91" y="389" width="218" height="15" rx="5" fill="#ffb300"/>
-        <rect x="113" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
-        <rect x="244" y="408" width="44" height="28" rx="6" fill="#ffb300"/>
-      </g>
-      <rect class="target" x="86" y="176" width="228" height="222" rx="10" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="14 10"/>
-    </svg>
-    <div class="chip"><i></i>Takip ediliyor</div>
-    <button class="try" id="try">Dene: öndeki tır ilerlesin</button>
-    <div class="alarm" role="alert">
-      <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
-      <strong>Öndeki tır ilerledi!</strong>
-      <button id="stop">Alarmı kapat</button>
+    <div class="demo" id="scene">
+      <div class="phone">
+        <div class="screen">
+      <svg class="cam" viewBox="0 0 400 869" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b14"/><stop offset=".54" stop-color="#1b2335"/></linearGradient>
+          <radialGradient id="lamp"><stop offset="0" stop-color="#ffb300" stop-opacity=".45"/><stop offset="1" stop-color="#ffb300" stop-opacity="0"/></radialGradient>
+          <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6e9ee"/><stop offset="1" stop-color="#9aa1ab"/></linearGradient>
+          <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+        </defs>
+        <rect width="400" height="869" fill="url(#sky)"/>
+        <circle cx="336" cy="170" r="170" fill="url(#lamp)"/>
+        <path d="M336 166 V470" stroke="#202633" stroke-width="5"/>
+        <circle cx="336" cy="164" r="7" fill="#ffd36b"/>
+        <rect y="470" width="400" height="399" fill="#12151b"/>
+        <path d="M24 869 L190 470 H210 L376 869 Z" fill="#1b1f27"/>
+        <path d="M200 482 V500 M200 530 V568 M200 612 V676 M200 742 V869" stroke="#4c5360" stroke-width="5"/>
+        <g class="trailer">
+          <ellipse cx="200" cy="642" rx="140" ry="12" fill="#000" opacity=".55"/>
+          <rect x="92" y="300" width="216" height="290" rx="6" fill="url(#box)"/>
+          <rect x="198" y="308" width="4" height="274" fill="#6f7680"/>
+          <path d="M146 316 V576 M168 316 V576 M232 316 V576 M254 316 V576" stroke="#7f8690" stroke-width="5"/>
+          <rect x="174" y="430" width="16" height="7" rx="2" fill="#5b616b"/>
+          <rect x="210" y="430" width="16" height="7" rx="2" fill="#5b616b"/>
+          <rect x="84" y="590" width="232" height="15" rx="3" fill="#1d2129"/>
+          <g filter="url(#blur)" fill="#ff3b2b" opacity=".75"><rect x="92" y="552" width="36" height="22"/><rect x="272" y="552" width="36" height="22"/></g>
+          <rect x="96" y="556" width="28" height="14" rx="3" fill="#ff5a48"/>
+          <rect x="276" y="556" width="28" height="14" rx="3" fill="#ff5a48"/>
+          <rect x="174" y="572" width="52" height="14" rx="2" fill="#f1f2f4"/>
+          <rect x="174" y="572" width="7" height="14" fill="#1f4fd8"/>
+          <rect x="108" y="605" width="54" height="34" rx="6" fill="#0b0d11"/>
+          <rect x="238" y="605" width="54" height="34" rx="6" fill="#0b0d11"/>
+        </g>
+        <rect class="target" x="78" y="286" width="244" height="334" rx="14" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="16 10"/>
+      </svg>
+          <div class="chip"><i></i>Takip ediliyor</div>
+          <div class="alarm" role="alert">
+            <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+            <strong>Öndeki tır ilerledi!</strong>
+            <button id="stop">Alarmı kapat</button>
+          </div>
+        </div>
+      </div>
+      <button class="try" id="try">Dene: öndeki tır ilerlesin</button>
     </div>
   </div>
 </div>
 
-<section>
-  <h2>Nasıl çalışır</h2>
-  <ol class="steps">
-    <li>
-      <h3>Telefonu ön cama takın</h3>
-      <p>Tutucuyla ön cama sabitleyin; arka kamera öndeki dorseyi görsün.</p>
-    </li>
-    <li>
-      <h3>Sarı kutuyu yerleştirin</h3>
-      <p>"Hedefi seç"e basın, sarı kutuyu dorsenin arkasına oturtun.</p>
-    </li>
-    <li>
-      <h3>Alarmı kurun, dinlenin</h3>
-      <p>"Alarmı kur"a basın. Gerisini telefon izler.</p>
-    </li>
-  </ol>
-</section>
-
-<section>
-  <h2>Ne zaman çalar</h2>
-  <ul class="rings">
-    <li>
-      <h3>Öndeki tır ilerleyince</h3>
-      <p>En yüksek sesle, sessiz modda bile.</p>
-    </li>
-    <li>
-      <h3>Kamera dorseyi göremezse</h3>
-      <p>Cam buğulandığında ya da telefon kaydığında haber verir.</p>
-    </li>
-    <li>
-      <h3>Telefon aşırı ısınırsa</h3>
-      <p>Güneşte kalan telefon kapanmadan önce sizi uyarır.</p>
-    </li>
-  </ul>
-  <p class="note">Alarmı kapatmak için düğmeye 1 saniye basılı tutun. iPhone ve iPad'de takip, uygulama ekranda açıkken çalışır: ekranı kilitlemeyin, uygulamadan çıkmayın.</p>
-</section>
-
-<section>
-  <h2>Nerelerde işe yarar</h2>
-  <ul class="places">
-    <li>
-      <h3>Sınır kapısı ve gümrük sırası</h3>
-      <p>Kapıkule, Hamzabeyli, İpsala, Sarp, Habur, Cilvegözü, Gürbulak gibi kapılarda saatler, bazen günler süren tır kuyruğunda.</p>
-    </li>
-    <li>
-      <h3>Liman, Ro-Ro ve feribot sırası</h3>
-      <p>Gemiye ya da feribota yükleme beklerken, sıra yavaş yavaş ilerlediğinde.</p>
-    </li>
-    <li>
-      <h3>Fabrika, depo ve kantar sırası</h3>
-      <p>Yükleme, boşaltma ya da tartı için kapıda beklerken.</p>
-    </li>
-  </ul>
-  <p class="note">Tır ve kamyon şoförleri için yapıldı. Yeni otomobillerdeki "öndeki araç kalkış uyarısı" gibi çalışır, ama aracınızda değil, telefonunuzda.</p>
-</section>
-
-<section>
-  <h2>Uygulamadan</h2>
-  <div class="shots">
-    <img src="/img/tr_2.jpg" width="600" height="1304" loading="lazy" alt="Tır Sıra Takip ana ekranı: Her şey hazır, Hedefi seç düğmesi ve alarm öncesi kontroller">
-    <img src="/img/tr_3.jpg" width="600" height="1304" loading="lazy" alt="Takip ekranı: öndeki tır takip ediliyor, süre ve son kontrol">
-    <img src="/img/tr_1.jpg" width="600" height="1304" loading="lazy" alt="Alarm ekranı: Öndeki tır ilerledi!">
-    <img src="/img/tr_4.jpg" width="600" height="1304" loading="lazy" alt="Abonelik ekranı: 7 gün ücretsiz deneme ve planlar">
+<section id="nasil" class="alt">
+  <div class="wrap">
+    <h2>Nasıl çalışır</h2>
+    <p class="intro">Kurulum bir dakika sürer. Telefon ön camda öndeki dorseyi izler, siz arkada uyursunuz.</p>
+    <ol class="steps">
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/tr_2.webp" width="860" height="1869" loading="lazy" alt="Ana ekran: Her şey hazır, Hedefi seç düğmesi ve alarm öncesi kontroller"></div></div>
+        <h3>Telefonu ön cama takın</h3>
+        <p>Tutucuyla sabitleyin, "Hedefi seç"e basın ve sarı kutuyu dorsenin arkasına oturtun.</p>
+      </li>
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/tr_3.webp" width="860" height="1869" loading="lazy" alt="Takip ekranı: öndeki tır takip ediliyor, süre ve son kontrol"></div></div>
+        <h3>Alarmı kurun, dinlenin</h3>
+        <p>Ekran kararır, telefon öndeki aracı izlemeye devam eder. Gerisini ona bırakın.</p>
+      </li>
+      <li>
+        <div class="phone"><div class="screen"><img src="/img/tr_1.webp" width="860" height="1869" loading="lazy" alt="Alarm ekranı: Öndeki tır ilerledi!"></div></div>
+        <h3>Tır ilerleyince uyanın</h3>
+        <p>Öndeki araç kalktığı anda en yüksek sesle alarm çalar. Kapatmak için 1 saniye basılı tutun.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
-<section class="split">
-  <div>
-    <h2>Gizlilik</h2>
-    <p>Görüntüler yalnızca telefonunuzda işlenir. Hiçbir görüntü kaydedilmez, dışarı gönderilmez. Hesap yok, reklam yok.</p>
-    <p><a href="/privacy.html?lang=tr">Gizlilik Politikası</a></p>
+<section>
+  <div class="wrap">
+    <h2>Ne zaman çalar</h2>
+    <p class="intro">Alarm yalnızca sıra ilerleyince değil, takip riske girdiğinde de çalar.</p>
+    <ul class="cards">
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="18" cy="17.5" r="1.8"/></svg></div>
+        <h3>Öndeki tır ilerleyince</h3>
+        <p>En yüksek sesle, sessiz modda bile.</p>
+      </li>
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c5 0 9 4.5 10 7a13 13 0 0 1-2.4 3.4M6.3 6.3C4.1 7.7 2.6 9.9 2 12c1 2.5 5 7 10 7a9.7 9.7 0 0 0 5.7-1.8M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></div>
+        <h3>Kamera dorseyi göremezse</h3>
+        <p>Cam buğulandığında ya da telefon kaydığında haber verir.</p>
+      </li>
+      <li>
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0Z"/></svg></div>
+        <h3>Telefon aşırı ısınırsa</h3>
+        <p>Güneşte kalan telefon kapanmadan önce sizi uyarır.</p>
+      </li>
+    </ul>
+    <p class="note">iPhone ve iPad'de takip, uygulama ekranda açıkken çalışır: ekranı kilitlemeyin, uygulamadan çıkmayın.</p>
   </div>
-  <div>
-    <h2>Fiyat</h2>
-    <p>İlk takiple başlayan 7 gün ücretsiz. Kart gerekmez, süre bitince ücret alınmaz.</p>
-    <ul class="prices">
-      <li><span>Aylık</span><b>150 ₺</b></li>
-      <li><span>6 aylık</span><b>799 ₺</b></li>
-      <li><span>Yıllık</span><b>1.449 ₺</b></li>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Nerelerde işe yarar</h2>
+    <p class="intro">Tır ve kamyon şoförleri için yapıldı. Yeni otomobillerdeki "öndeki araç kalkış uyarısı" gibi çalışır, ama aracınızda değil, telefonunuzda.</p>
+    <ul class="places">
+      <li>
+        <h3>Sınır kapısı ve gümrük sırası</h3>
+        <p>Saatler, bazen günler süren tır kuyruğunda.</p>
+        <ul class="gates" aria-label="Örnek sınır kapıları">
+          <li>Kapıkule</li><li>Hamzabeyli</li><li>İpsala</li><li>Sarp</li><li>Habur</li><li>Cilvegözü</li><li>Gürbulak</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Liman, Ro-Ro ve feribot sırası</h3>
+        <p>Gemiye ya da feribota yükleme beklerken, sıra yavaş yavaş ilerlediğinde.</p>
+      </li>
+      <li>
+        <h3>Fabrika, depo ve kantar sırası</h3>
+        <p>Yükleme, boşaltma ya da tartı için kapıda beklerken.</p>
+      </li>
     </ul>
   </div>
 </section>
 
+<section id="fiyat">
+  <div class="wrap price">
+    <div class="phone"><div class="screen"><img src="/img/tr_4.webp" width="860" height="1869" loading="lazy" alt="Abonelik ekranı: 7 gün ücretsiz deneme ve planlar"></div></div>
+    <div>
+      <h2>Fiyat</h2>
+      <p class="intro">İlk takiple başlayan 7 gün ücretsiz. Kart gerekmez, süre bitince ücret alınmaz.</p>
+      <ul class="plans">
+        <li><span>Aylık<small>Her ay yenilenir</small></span><b>150 ₺</b></li>
+        <li><span>6 aylık<small>Ayda 133 ₺'ye gelir</small></span><b>799 ₺</b></li>
+        <li class="best"><span><em class="tag">En avantajlı</em>Yıllık<small>Ayda 121 ₺'ye gelir</small></span><b>1.449 ₺</b></li>
+      </ul>
+      <p class="note">Abonelik App Store ya da Google Play üzerinden yönetilir, istediğiniz zaman iptal edebilirsiniz.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Gizlilik</h2>
+    <p class="intro">Kamera görüntüsü telefonunuzdan hiç çıkmaz.</p>
+    <ul class="privacy">
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Telefonda işlenir</h3><p>Görüntüler kaydedilmez, hiçbir yere gönderilmez.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M17 8l4 4M21 8l-4 4"/></svg></div><h3>Hesap yok</h3><p>Kayıt olmadan, e-posta vermeden kullanın.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div><h3>Reklam yok</h3><p>Uyurken ekrana reklam düşmez.</p></li>
+    </ul>
+    <p class="note"><a href="/privacy.html?lang=tr">Gizlilik Politikası</a></p>
+  </div>
+</section>
+
 <section id="destek">
-  <h2>Sık sorulanlar</h2>
-  <details>
-    <summary>Tır sırasında uyurken sıramı nasıl kaçırmam?</summary>
-    <p>Telefonu ön cama takın, arka kamera öndeki tırı görsün. Tır Sıra Takip öndeki aracı izler ve araç ilerlediği anda en yüksek sesle alarm çalar. Siz dinlenirken sıranız kaybolmaz.</p>
-  </details>
-  <details>
-    <summary>İnternet gerekir mi? Yurt dışında çalışır mı?</summary>
-    <p>Takip internetsiz çalışır, görüntüler telefonda işlenir. Sınır kapısında ya da yurt dışında roaming açmanız gerekmez. Abonelik durumunun doğrulanması için haftada bir internete bağlanmak yeterlidir.</p>
-  </details>
-  <details>
-    <summary>Hangi telefonlarda çalışır?</summary>
-    <p>iOS 15 ve üstü iPhone ve iPad'lerde, Android 10 ve üstü telefonlarda çalışır. iPhone ve iPad'de takip, uygulama ekranda açıkken çalışır.</p>
-  </details>
-  <details>
-    <summary>Alarm neden çalmadı?</summary>
-    <p>Telefonun şarjda, sesinin açık ve sarı kutunun dorsenin üzerinde olduğundan emin olun. Uygulamadaki "Alarm öncesi kontrol" listesi eksikleri gösterir.</p>
-  </details>
-  <details>
-    <summary>Gece ya da sisli havada çalışır mı?</summary>
-    <p>Karanlık, sis ya da kirli cam görüntüyü zayıflatabilir. Kamera dorseyi göremez hâle gelirse alarm çalar ve sizi uyarır.</p>
-  </details>
-  <details>
-    <summary>Aboneliğimi nasıl iptal ederim?</summary>
-    <p>iPhone'da Ayarlar → adınız → Abonelikler; Android'de Google Play → Profil → Ödemeler ve abonelikler. İptal, dönemin sonunda geçerli olur.</p>
-  </details>
-  <p class="note">Başka bir sorunuz mu var? Yazın: <a href="mailto:info@batuhanyetgin.dev">info@batuhanyetgin.dev</a></p>
+  <div class="wrap faq">
+    <div>
+      <h2>Sık sorulanlar</h2>
+      <p class="note">Başka bir sorunuz mu var? Yazın: <a href="mailto:info@batuhanyetgin.dev">info@batuhanyetgin.dev</a></p>
+    </div>
+    <div>
+      <details>
+        <summary>Tır sırasında uyurken sıramı nasıl kaçırmam?</summary>
+        <p>Telefonu ön cama takın, arka kamera öndeki tırı görsün. Tır Sıra Takip öndeki aracı izler ve araç ilerlediği anda en yüksek sesle alarm çalar. Siz dinlenirken sıranız kaybolmaz.</p>
+      </details>
+      <details>
+        <summary>İnternet gerekir mi? Yurt dışında çalışır mı?</summary>
+        <p>Takip internetsiz çalışır, görüntüler telefonda işlenir. Sınır kapısında ya da yurt dışında roaming açmanız gerekmez. Abonelik durumunun doğrulanması için haftada bir internete bağlanmak yeterlidir.</p>
+      </details>
+      <details>
+        <summary>Hangi telefonlarda çalışır?</summary>
+        <p>iOS 15 ve üstü iPhone ve iPad'lerde, Android 10 ve üstü telefonlarda çalışır. iPhone ve iPad'de takip, uygulama ekranda açıkken çalışır.</p>
+      </details>
+      <details>
+        <summary>Alarm neden çalmadı?</summary>
+        <p>Telefonun şarjda, sesinin açık ve sarı kutunun dorsenin üzerinde olduğundan emin olun. Uygulamadaki "Alarm öncesi kontrol" listesi eksikleri gösterir.</p>
+      </details>
+      <details>
+        <summary>Gece ya da sisli havada çalışır mı?</summary>
+        <p>Karanlık, sis ya da kirli cam görüntüyü zayıflatabilir. Kamera dorseyi göremez hâle gelirse alarm çalar ve sizi uyarır.</p>
+      </details>
+      <details>
+        <summary>Aboneliğimi nasıl iptal ederim?</summary>
+        <p>iPhone'da Ayarlar → adınız → Abonelikler; Android'de Google Play → Profil → Ödemeler ve abonelikler. İptal, dönemin sonunda geçerli olur.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Bir sonraki sırada rahat uyuyun.</h2>
+      <p>Tır Sıra Takip yakında App Store ve Google Play'de. İlk 7 gün ücretsiz.</p>
+      <!-- Swap each span for <a class="badge" href="..."> once the app is live in that store. -->
+      <div class="stores">
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Yakında</small><b>App Store</b></span></span>
+        <span class="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg><span><small>Yakında</small><b>Google Play</b></span></span>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
 <footer>
-  <span>© 2026 Batuhan Yetgin</span>
-  <a href="/privacy.html?lang=tr">Gizlilik Politikası</a>
-  <a href="/terms.html?lang=tr">Kullanım Şartları</a>
-  <a href="#destek">Destek</a>
+  <div class="wrap">
+    <span>© 2026 Batuhan Yetgin</span>
+    <a href="/privacy.html?lang=tr">Gizlilik Politikası</a>
+    <a href="/terms.html?lang=tr">Kullanım Şartları</a>
+    <a href="#destek">Destek</a>
+  </div>
 </footer>
-</div>
 
 <script src="/demo.js"></script>
 </body>
