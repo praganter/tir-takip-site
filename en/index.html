@@ -80,7 +80,8 @@
 <div class="hero">
   <div class="wrap">
     <div>
-      <h1>Sleep in the truck queue without losing your place.</h1>
+      <p class="eyebrow">Built for truck drivers</p>
+      <h1>Sleep in the truck queue <em>without losing your place.</em></h1>
       <p class="lede">Waiting for hours at the border, the port or a factory gate? While you rest, your phone keeps an eye on the truck ahead and wakes you at full volume the moment it moves.</p>
       <!-- Swap each span for <a class="badge" href="..."> once the app is live in that store. -->
       <div class="stores">
@@ -129,17 +130,23 @@
         </g>
         <rect class="target" x="78" y="286" width="244" height="334" rx="14" fill="none" stroke="#ffb300" stroke-width="4" stroke-dasharray="16 10"/>
       </svg>
-          <div class="chip"><i></i>Watching</div>
+          <div class="chip"><i></i><span class="watch">Watching</span><span class="moved">Movement detected</span></div>
+          <div class="hud"><span>Waiting<b id="clock">02:47:12</b></span><span>Last check<b>now</b></span></div>
           <div class="alarm" role="alert">
-            <svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+            <span class="bell"><svg width="72" height="56" viewBox="0 0 24 18" aria-hidden="true"><path fill="#fff" d="M2 0h11a2 2 0 0 1 2 2v2h3.5a1 1 0 0 1 .8.4l3.5 4.6a1 1 0 0 1 .2.6V14a1 1 0 0 1-1 1h-1a3 3 0 0 1-6 0H9a3 3 0 0 1-6 0H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm13 6v3h5.2l-2.3-3H15ZM6 13.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg></span>
             <strong>The truck ahead moved!</strong>
             <button id="stop">Stop alarm</button>
           </div>
         </div>
       </div>
+      <ol class="stages" aria-hidden="true"><li>Watching</li><li>Truck moved</li><li>Alarm</li></ol>
       <button class="try" id="try">Try it: let the truck move</button>
     </div>
   </div>
+</div>
+
+<div class="stats">
+  <div class="wrap"><dl><div><dt>1 min</dt><dd>Setup time</dd></div><div><dt>0 MB</dt><dd>Data used</dd></div><div><dt>100%</dt><dd>On-device</dd></div><div><dt>7 days</dt><dd>Free trial</dd></div></dl></div>
 </div>
 
 <section id="how" class="alt">
