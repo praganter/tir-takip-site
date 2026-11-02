@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="darkreader-lock">
+<script>
+(function(){var h=location.pathname.indexOf('/en')===0?'en':'tr',s;
+try{s=localStorage.getItem('lang')}catch(e){}
+var w=s==='tr'||s==='en'?s:/^tr/i.test(navigator.language)?'tr':'en';
+if(w!==h&&!/bot|crawl|spider/i.test(navigator.userAgent))location.replace(w==='en'?'/en/':'/');
+document.addEventListener('click',function(e){var a=e.target.closest('.lang a');if(a)try{localStorage.setItem('lang',a.getAttribute('hreflang')||h)}catch(x){}});
+})();
+</script>
 <title>Truck Watch: truck queue alarm that wakes you when the line moves</title>
 <meta name="description" content="Waiting in a truck queue at the border, the port or a factory gate? Rest while your phone watches the truck ahead and wakes you at full volume the moment it moves. 7 days free.">
 <link rel="canonical" href="https://tirsiratakip.com/en/">
