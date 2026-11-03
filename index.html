@@ -33,9 +33,6 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
 <meta name="theme-color" content="#0f1115">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 [{
@@ -52,11 +49,12 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
   "alternateName": ["Tır Takip", "Truck Watch"],
   "url": "https://tirsiratakip.com/",
   "image": "https://tirsiratakip.com/img/icon.png",
+  "screenshot": ["https://tirsiratakip.com/img/tr_1.webp", "https://tirsiratakip.com/img/tr_2.webp", "https://tirsiratakip.com/img/tr_3.webp", "https://tirsiratakip.com/img/tr_4.webp"],
   "description": "Tır sırasında öndeki araç ilerleyince sürücüyü yüksek sesli alarmla uyandıran uygulama. Gümrük, sınır kapısı, liman ve fabrika sıraları için.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "iOS 15+, Android 10+",
   "inLanguage": ["tr", "en"],
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY", "description": "7 gün ücretsiz deneme, sonra aylık, 6 aylık veya yıllık abonelik"},
+  "offers": [{"@type": "Offer", "name": "Aylık", "price": "150", "priceCurrency": "TRY", "description": "7 gün ücretsiz deneme, sonra aylık abonelik"}, {"@type": "Offer", "name": "6 aylık", "price": "799", "priceCurrency": "TRY", "description": "7 gün ücretsiz deneme, sonra 6 aylık abonelik"}, {"@type": "Offer", "name": "Yıllık", "price": "1449", "priceCurrency": "TRY", "description": "7 gün ücretsiz deneme, sonra yıllık abonelik"}],
   "author": {"@type": "Person", "name": "Batuhan Yetgin"}
 }, {
   "@context": "https://schema.org",
@@ -73,7 +71,17 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
     {"@type": "Question", "name": "Gece ya da sisli havada çalışır mı?",
      "acceptedAnswer": {"@type": "Answer", "text": "Karanlık, sis ya da kirli cam görüntüyü zayıflatabilir. Kamera dorseyi göremez hâle gelirse alarm çalar ve sizi uyarır."}},
     {"@type": "Question", "name": "Aboneliğimi nasıl iptal ederim?",
-     "acceptedAnswer": {"@type": "Answer", "text": "iPhone'da Ayarlar, adınız, Abonelikler; Android'de Google Play, Profil, Ödemeler ve abonelikler. İptal dönemin sonunda geçerli olur."}}
+     "acceptedAnswer": {"@type": "Answer", "text": "iPhone'da Ayarlar, adınız, Abonelikler; Android'de Google Play, Profil, Ödemeler ve abonelikler. İptal dönemin sonunda geçerli olur."}},
+    {"@type": "Question", "name": "Öndeki araç ne kadar ilerleyince alarm çalar?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Öndeki tır yaklaşık 1 metre uzaklaştığında alarm çalar. Telefonu kurarken sarı kutuyu dorsenin üzerine oturtursunuz, uygulama mesafeyi buna göre hesaplar."}},
+    {"@type": "Question", "name": "Yanlış alarm verir mi?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Alarm tek bir kareye bakılarak verilmez; kısa aralıklı birkaç kare birlikte doğrulanır. Yanından geçen biri ya da bir farın ışığı gibi kısa süreli değişimler bu doğrulamada elenir."}},
+    {"@type": "Question", "name": "Telefon ısınırsa ne olur?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Telefon ısındıkça kontrol aralığı uzar ve görüntü çözünürlüğü düşer, böylece ısı artışı yavaşlar. Çok ısınırsa şarjı çıkarmanız ya da telefonu gölgeye almanız için uyarı verir; kritik ısıda sizi uyandıran bir alarm çalar."}},
+    {"@type": "Question", "name": "Hangi şarj aletini kullanmalıyım?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Hızlı şarj gerekmez; normal bir şarj aleti yeterli. Telefonu doğrudan güneş almayan bir yere koyun, pil koruma ayarınız varsa açık bırakabilirsiniz."}},
+    {"@type": "Question", "name": "Alarmı nasıl kapatırım?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Ekrandaki düğmeye 1 saniye basılı tutun. Yarı uykuda yanlışlıkla kapanmaması için tek dokunuş yetmez."}}
   ]
 }]
 </script>
@@ -296,6 +304,26 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
       <details>
         <summary>Aboneliğimi nasıl iptal ederim?</summary>
         <p>iPhone'da Ayarlar → adınız → Abonelikler; Android'de Google Play → Profil → Ödemeler ve abonelikler. İptal, dönemin sonunda geçerli olur.</p>
+      </details>
+      <details>
+        <summary>Öndeki araç ne kadar ilerleyince alarm çalar?</summary>
+        <p>Öndeki tır yaklaşık 1 metre uzaklaştığında alarm çalar. Telefonu kurarken sarı kutuyu dorsenin üzerine oturtursunuz, uygulama mesafeyi buna göre hesaplar.</p>
+      </details>
+      <details>
+        <summary>Yanlış alarm verir mi?</summary>
+        <p>Alarm tek bir kareye bakılarak verilmez; kısa aralıklı birkaç kare birlikte doğrulanır. Yanından geçen biri ya da bir farın ışığı gibi kısa süreli değişimler bu doğrulamada elenir.</p>
+      </details>
+      <details>
+        <summary>Telefon ısınırsa ne olur?</summary>
+        <p>Telefon ısındıkça kontrol aralığı uzar ve görüntü çözünürlüğü düşer, böylece ısı artışı yavaşlar. Çok ısınırsa şarjı çıkarmanız ya da telefonu gölgeye almanız için uyarı verir; kritik ısıda sizi uyandıran bir alarm çalar.</p>
+      </details>
+      <details>
+        <summary>Hangi şarj aletini kullanmalıyım?</summary>
+        <p>Hızlı şarj gerekmez; normal bir şarj aleti yeterli. Telefonu doğrudan güneş almayan bir yere koyun, pil koruma ayarınız varsa açık bırakabilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Alarmı nasıl kapatırım?</summary>
+        <p>Ekrandaki düğmeye 1 saniye basılı tutun. Yarı uykuda yanlışlıkla kapanmaması için tek dokunuş yetmez.</p>
       </details>
     </div>
   </div>

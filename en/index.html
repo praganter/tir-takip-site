@@ -33,9 +33,6 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
 <meta name="theme-color" content="#0f1115">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 [{
@@ -45,11 +42,12 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
   "alternateName": ["Tır Sıra Takip", "Tır Takip"],
   "url": "https://tirsiratakip.com/en/",
   "image": "https://tirsiratakip.com/img/icon.png",
+  "screenshot": ["https://tirsiratakip.com/img/en_1.webp", "https://tirsiratakip.com/img/en_2.webp", "https://tirsiratakip.com/img/en_3.webp", "https://tirsiratakip.com/img/en_4.webp"],
   "description": "An app that wakes truck drivers with a loud alarm when the vehicle ahead moves in a queue. For border, port and factory queues.",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "iOS 15+, Android 10+",
   "inLanguage": ["en", "tr"],
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "7-day free trial, then a monthly, 6-month or yearly subscription"},
+  "offers": [{"@type": "Offer", "name": "Monthly", "price": "150", "priceCurrency": "TRY", "description": "7-day free trial, then monthly subscription"}, {"@type": "Offer", "name": "6-month", "price": "799", "priceCurrency": "TRY", "description": "7-day free trial, then 6-month subscription"}, {"@type": "Offer", "name": "Yearly", "price": "1449", "priceCurrency": "TRY", "description": "7-day free trial, then yearly subscription"}],
   "author": {"@type": "Person", "name": "Batuhan Yetgin"}
 }, {
   "@context": "https://schema.org",
@@ -66,7 +64,17 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
     {"@type": "Question", "name": "Does it work at night or in fog?",
      "acceptedAnswer": {"@type": "Answer", "text": "Darkness, fog or a dirty windscreen can weaken the image. If the camera loses sight of the trailer, the alarm rings to warn you."}},
     {"@type": "Question", "name": "How do I cancel my subscription?",
-     "acceptedAnswer": {"@type": "Answer", "text": "On iPhone: Settings, your name, Subscriptions. On Android: Google Play, Profile, Payments and subscriptions. Cancellation takes effect at the end of the period."}}
+     "acceptedAnswer": {"@type": "Answer", "text": "On iPhone: Settings, your name, Subscriptions. On Android: Google Play, Profile, Payments and subscriptions. Cancellation takes effect at the end of the period."}},
+    {"@type": "Question", "name": "How far must the truck ahead move before the alarm rings?",
+     "acceptedAnswer": {"@type": "Answer", "text": "The alarm rings when the truck ahead has moved about 1 metre away. When you set up, you fit the yellow box over the trailer and the app works out the distance from it."}},
+    {"@type": "Question", "name": "Does it give false alarms?",
+     "acceptedAnswer": {"@type": "Answer", "text": "An alarm is never based on a single frame; several quick frames are checked together. Short-lived changes such as a person walking past or a car's headlights are filtered out in that check."}},
+    {"@type": "Question", "name": "What happens if the phone gets hot?",
+     "acceptedAnswer": {"@type": "Answer", "text": "As the phone warms up, checks become less frequent and the image resolution drops, which slows the heating. If it gets hot you are told to unplug it or move it into the shade, and at a critical temperature an alarm wakes you."}},
+    {"@type": "Question", "name": "Which charger should I use?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Fast charging is not needed; a normal charger is enough. Keep the phone out of direct sunlight."}},
+    {"@type": "Question", "name": "How do I dismiss the alarm?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Press and hold the on-screen button for 1 second. A single tap is not enough, so you cannot dismiss it by accident half-asleep."}}
   ]
 }]
 </script>
@@ -289,6 +297,26 @@ document.addEventListener('click',function(e){var a=e.target.closest('.lang a');
       <details>
         <summary>How do I cancel my subscription?</summary>
         <p>On iPhone: Settings → your name → Subscriptions. On Android: Google Play → Profile → Payments &amp; subscriptions. Cancellation takes effect at the end of the period.</p>
+      </details>
+      <details>
+        <summary>How far must the truck ahead move before the alarm rings?</summary>
+        <p>The alarm rings when the truck ahead has moved about 1 metre away. When you set up, you fit the yellow box over the trailer and the app works out the distance from it.</p>
+      </details>
+      <details>
+        <summary>Does it give false alarms?</summary>
+        <p>An alarm is never based on a single frame; several quick frames are checked together. Short-lived changes such as a person walking past or a car's headlights are filtered out in that check.</p>
+      </details>
+      <details>
+        <summary>What happens if the phone gets hot?</summary>
+        <p>As the phone warms up, checks become less frequent and the image resolution drops, which slows the heating. If it gets hot you are told to unplug it or move it into the shade, and at a critical temperature an alarm wakes you.</p>
+      </details>
+      <details>
+        <summary>Which charger should I use?</summary>
+        <p>Fast charging is not needed; a normal charger is enough. Keep the phone out of direct sunlight.</p>
+      </details>
+      <details>
+        <summary>How do I dismiss the alarm?</summary>
+        <p>Press and hold the on-screen button for 1 second. A single tap is not enough, so you cannot dismiss it by accident half-asleep.</p>
       </details>
     </div>
   </div>

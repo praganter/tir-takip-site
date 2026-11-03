@@ -1,0 +1,14 @@
+# Tır Sıra Takip (Truck Watch)
+
+> Tır sırasında öndeki araç ilerleyince sürücüyü yüksek sesli alarmla uyandıran mobil uygulama. / A mobile app that wakes truck drivers with a loud alarm when the vehicle ahead moves in a queue.
+
+Telefon ön cama takılır, arka kamera öndeki tırı izler; dorse yaklaşık 1 metre uzaklaşınca alarm çalar. Görüntüler telefonda işlenir, hesap ve reklam yoktur. iOS 15+ ve Android 10+. 7 gün ücretsiz deneme, sonra aylık (150 TL), 6 aylık (799 TL) veya yıllık (1.449 TL) abonelik. Uygulama henüz mağazalarda yayınlanmadı.
+
+The phone is mounted on the windscreen and the rear camera watches the truck ahead; the alarm rings when the trailer has moved about 1 metre away. Images are processed on the phone; no account, no ads. iOS 15+ and Android 10+. 7-day free trial, then a monthly, 6-month or yearly subscription. Not yet released in the app stores.
+
+## Sayfalar / Pages
+
+- [Ana sayfa (Türkçe)](https://tirsiratakip.com/): nasıl çalışır, ne zaman çalar, fiyat, sık sorulanlar
+- [Home (English)](https://tirsiratakip.com/en/): how it works, when it rings, pricing, FAQ
+- [Gizlilik Politikası / Privacy Policy](https://tirsiratakip.com/privacy.html)
+- [Kullanım Şartları / Terms of Use](https://tirsiratakip.com/terms.html)
